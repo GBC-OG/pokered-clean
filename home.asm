@@ -4236,13 +4236,13 @@ print_digit: macro
 
 if (\1) / $10000
 	ld a, \1 / $10000 % $100
-else	xor a
+else
 endc
 	ld [H_POWEROFTEN + 0], a
 
 if (\1) / $100
 	ld a, \1 / $100   % $100
-else	xor a
+else
 endc
 	ld [H_POWEROFTEN + 1], a
 
